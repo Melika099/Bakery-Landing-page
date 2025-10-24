@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <nav>
+    <div class="logo">Mel'S Bakery</div>
+    <ul>
+      <li><a href="#features" id="features">Features</a></li>
+      <li><a href="#food" id="shop">Shop</a></li>
+      <li><a href="#footer" id="contact">Contact</a></li>
+      <button class="cart-btn" id="cart-btn">🛒 <span class="cart-count" id="cart-count">0</span></button>
+    </ul>
+  </nav>
+
+  <section class="hero"></section>
+
+  <section id="food" class="active">
+    <h2>Here are some of the things we are offering at our bakery</h2>
+    <div class="our-menu">
+      <div class="menu">
+        <h3>Pound Cake</h3>
+        <img src="Img/pound-1.jpg">
+        <div class="price">R 40.00</div>
+        <button>BUY</button>
+      </div>
+
+      <div class="menu">
+        <h3>Cotti Biscuits</h3>
+        <img src="Img/cotti-3.jpg">
+        <div class="price">R 30.00</div>
+        <button>BUY</button>
+      </div>
+
+      <div class="menu">
+        <h3>Carmel Cake</h3>
+        <img src="Img/stuffed.jpg">
+        <div class="price">R 50.00</div>
+        <button>BUY</button>
+      </div>
+
+      <div class="menu">
+        <h3>Macarons</h3>
+        <img src="Img/mac-4.jpg">
+        <div class="price">R 50.00</div>
+        <button>BUY</button>
+      </div>
+
+      <div class="menu">
+        <h3>Carrot Cake</h3>
+        <img src="Img/Best-Moist-Carrot-Cake.jpg">
+        <div class="price">R 56.00</div>
+        <button>BUY</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="newsletter">
+    <div class="new">
+      <legend>
+        <h1>Subscribe to our <span>News Letter</span>.</h1>
+      </legend>
+
+      <form method="post" action="">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required />
+
+        <label for="surname">Surname</label>
+        <input type="text" name="surname" id="surname" placeholder="Enter your surname" />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="mailto@email.com" required />
+
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div id="newsletter-toast" class="newsletter-toast">
+      ✅ Thank you for subscribing!
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="feature">
+      <h3>Freshly Baked Goods</h3>
+      <p>Our bakery offers a wide range of freshly baked breads, pastries, and cakes every day. Each item is made with
+        high-quality ingredients to ensure the perfect taste and aroma that will delight your senses..</p>
+    </div>
+    <div class="feature">
+      <h3>Custom Cakes</h3>
+      <p>We create custom cakes for all occasions—birthdays, weddings, or special celebrations. You can choose flavors,
+        designs, and decorations, making each cake uniquely yours..</p>
+    </div>
+    <div class="feature">
+      <h3>Friendly Customer Service</h3>
+      <p>Our team is dedicated to providing excellent customer service. We guide you through our products, offer
+        recommendations, and make sure every visit to our bakery is a warm and enjoyable experience.</p>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 MyApp. All rights reserved. | <a href="#">Privacy Policy</a></p>
+
+      <div class="social-icons">
+        <a href="https://wa.me/your-number" target="_blank" class="whatsapp" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://facebook.com/yourpage" target="_blank" class="facebook" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/yourpage" target="_blank" class="instagram" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://x.com/yourpage" target="_blank" class="x-twitter" aria-label="X">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="tel:+27123456789" class="phone" aria-label="Phone">
+          <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="mailto:info@myapp.com" class="email" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cart" id="cart">
+    <h2>Your Cart</h2>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="total" id="cart-total">Total: R 0</div>
+    <button class="close-cart" id="close-cart">Close</button>
+  </div>
+
+  <button id="back-to-top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
